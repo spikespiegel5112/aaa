@@ -1,0 +1,36 @@
+.order_createorder_wrapper {
+    margin: 0 auto;
+    width: 40%;
+    min-width: 700px;
+    .common_step_wrapper {
+        width: 650px;
+    }
+}
+.order_qrcode_wrapper {
+    .hint {
+        padding: 20px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .qrcode {
+        padding: 20px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .error {
+        text-align: center;
+        color: red;
+    }
+    .common_step_wrapper {
+        width: 650px;
+    }
+}
+
+.order_qrcodepopup_wrapper {
+    text-align: center;
+
+    .common_step_wrapper {
+        padding: 10px 0 20px 0;
+        width: 100%;
+    }
+}

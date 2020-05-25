@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "alipuhuiti-regular";
+  // src: url("../font/Alibaba-PuHuiTi-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "alipuhuiti-light";
+  // src: url("../font/Alibaba-PuHuiTi-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "alipuhuiti-light";
+  // src: url("../font/Alibaba-PuHuiTi-Light.ttf") format("truetype");
+}
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "STHeiti", "SimHei", "Microsoft YaHei",
+    Arial, sans-serif;
+  color: $orange;
+  font-weight: 400;
+}
+
+.common_main_container {
+  .app_main {
+    padding: 0 25px 25px 25px;
+    /* 50= navbar  50  */
+    height: calc(100vh - 155px);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #f0f2f5;
+
+    > .box_card {
+      // padding: 35px 20px 20px 20px;
+      padding: 10px 20px 20px 20px;
+      height: 100%;
+      overflow: auto;
+
+      > .el-card__body {
+        padding: 0;
+        height: 100%;
+        // overflow: auto;
+      }
+    }
+  }
+  .copyright_wrapper {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.common_vantstep_wrapper {
+  margin: 2rem auto;
+  width: 60%;
+}
+.common_vantform_wrapper {
+  margin: 1.5rem 0 0 0;
+  .footer {
+    margin: 1rem 0.8rem 2rem;
+  }
+}
+
+.common_dialog_container {
+  background-color: rgba($color: #000000, $alpha: 0.4);
+}
+.van-popup {
+  box-shadow: 0.3rem 0.3rem 1rem rgba($color: #000000, $alpha: 0.4);
+}
+.common_dialog_wrapper {
+  width: 11rem;
+  // border-radius: 1rem;
+  overflow: hidden;
+
+  .main {
+    display: flex;
+    width: 100%;
+    min-height: 7rem;
+    align-items: center;
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 100%;
+    }
+    .content {
+      width: 100%;
+      color: #000;
+      text-align: center;
+      font-size: 0.7rem;
+    }
+  }
+  .footer {
+    display: flex;
+    width: 100%;
+    height: 2.5rem;
+    font-size: 0.7rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    a {
+      display: inline-block;
+    }
+  }
+}

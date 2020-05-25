@@ -1,0 +1,247 @@
+$orange: #dd7034;
+$orangelight: #e78a14;
+
+@import "vantui.scss";
+
+.innerlayoutmobile {
+    position: relative;
+    font-family: "simhei";
+    .header {
+        display: flex;
+        width: 100%;
+        height: 2rem;
+        border-bottom: 1px solid #dd7034;
+        align-items: center;
+        &:before {
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 100%;
+            vertical-align: middle;
+        }
+        .logo {
+            display: inline-block;
+            flex: 1;
+            vertical-align: middle;
+
+            &:before {
+                content: "";
+                display: inline-block;
+                width: 0;
+                height: 100%;
+                vertical-align: middle;
+            }
+            img {
+                display: inline-block;
+                margin: 0 1rem;
+                width: 3.5rem;
+                vertical-align: middle;
+            }
+        }
+
+        .close {
+            display: inline-block;
+            margin: 0 0.5rem;
+            width: 1rem;
+            height: 1rem;
+            vertical-align: middle;
+        }
+    }
+    .main {
+        position: relative;
+        z-index: 1;
+        .title {
+            padding: 1rem 0;
+            font-size: 0.7rem;
+            &:before {
+                content: "";
+                display: inline-block;
+                margin: 0 0.5rem 0 1rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background-color: #dd7034;
+                // vertical-align: middle;
+            }
+        }
+        .login {
+            margin: 2rem 0 0 0;
+            .forgetpassword {
+                padding: 1.5rem 0.8rem;
+                ul {
+                    display: flex;
+                    // justify-content: center;
+                    justify-content: space-between;
+
+                    li {
+                        display: inline-block;
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+    .bg {
+        width: 10.5rem;
+        height: 7.7rem;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        img {
+            display: inline-block;
+            width: 100%;
+        }
+        // background-image: url("../image/access/login_footer_00000.jpg");
+        // background-image: url('../image/mobile/logo.png');
+    }
+}
+
+.order_qrcodemobile_wrapper {
+    // padding: 1.5rem 0 0 0;
+    // background-color: red;
+    .hint {
+        color: #656666;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .qrcode_wrapper {
+        padding: 0.5rem 0 3rem 0;
+        text-align: center;
+
+        .qrcode {
+            display: inline-block;
+            width: 9rem;
+            height: 9rem;
+            canvas {
+                // display: inline-block !important;
+            }
+            img {
+                // display: none !important;
+                // margin: 0 auto;
+                display: inline-block;
+                width: 100%;
+            }
+        }
+        .error {
+            text-align: center;
+        }
+        .amount {
+            margin: 1rem 0 0 0;
+            color: #656666;
+            font-size: 1rem;
+        }
+    }
+}
+
+.step3 {
+    .banner {
+        margin: 0 auto;
+        padding: 2rem 0 0 0;
+        width: 7rem;
+        img {
+            display: block;
+            width: 100%;
+        }
+        label {
+            display: block;
+            margin: 0.5rem 0 0 0;
+            width: 100%;
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+}
+.van-cell-group {
+    background-color: transparent;
+    .van-cell {
+        background-color: transparent;
+    }
+}
+.van-field {
+    .van-field__body {
+        .van-radio-group--horizontal {
+            width: 100%;
+            display: flex;
+            .van-radio {
+                margin: 0 0 0.5rem 0;
+                width: 3.3rem;
+            }
+        }
+    }
+
+    &.border {
+        .van-field__body {
+            input,
+            textarea {
+                padding: 0 1rem;
+                border: 1px solid #dd7034;
+                border-radius: 2rem;
+                background-color: #fff;
+            }
+            textarea {
+                border-radius: 0.5rem;
+            }
+        }
+    }
+}
+.van-steps {
+    &.van-steps--horizontal {
+        .van-steps__items {
+            .van-step__circle-container {
+                .van-step__circle {
+                    width: 0.5rem;
+                    height: 0.5rem;
+                }
+            }
+            .van-step__line {
+                height: 2px;
+                background-color: #ccc!important;
+                top: 1.45rem;
+            }
+            .van-step__circle-container {
+                padding: 0;
+                .van-step__circle {
+                    background-color: #ccc;
+                }
+            }
+        }
+    }
+}
+.paymentlist {
+    .van-field__body {
+        .van-radio-group--horizontal {
+            .van-radio {
+                display: block;
+                width: 100%;
+                .van-radio__icon {
+                    float: right;
+                    margin: 0.2rem 0 0 0;
+                }
+                .van-radio__label {
+                    float: left;
+                    margin-left: 0;
+                    > div {
+                        display: flex;
+                        align-items: center;
+                        .thumbnail {
+                            display: flex;
+                            margin: 0 10px 0 0;
+                            width: 1rem;
+                            vertical-align: middle;
+                            align-items: center;
+
+                            img {
+                                display: inline-block;
+                                width: 100%;
+                            }
+                            label {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

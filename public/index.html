@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <!-- <link rel="stylesheet" href="assets/loading/loading.css"> -->
+  <link rel="stylesheet" href="loading/loading.css">
+  <title><%= webpackConfig.name %></title>
+</head>
+
+<body>
+  <div id='app'></div>
+  <div class="loading_container">
+    <div class="page_load">
+      <div class="loader"></div>
+      <div class="loadtext">进入<span><%= webpackConfig.name %></span>中...</div>
+    </div>
+  </div>
+</body>
+
+
+</html>

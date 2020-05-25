@@ -1,0 +1,308 @@
+$orange: #dd7034;
+
+.access_login_container {
+  width: 100%;
+  min-width: 1200px;
+  position: relative;
+  text-align: right;
+
+  .bg {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+    position: absolute;
+    .header {
+      width: 100%;
+      .logo {
+        width: 8rem;
+        position: absolute;
+        top: 2rem;
+        left: 2.5rem;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .main {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      z-index: 1;
+      .banner {
+        display: inline-block;
+        width: 30rem;
+        min-width: 600px;
+        max-width: 950px;
+        vertical-align: middle;
+        img {
+          display: inline-block;
+          width: 100%;
+          // height: auto;
+          // position: absolute;
+          // bottom: 6rem;
+          // left: 7rem;
+          z-index: 1;
+        }
+      }
+
+      // .title {
+      //   margin: 0px auto 30px auto;
+      //   text-align: center;
+      //   color: #707070;
+      // }
+
+      .logo {
+        display: inline-block;
+        padding: 2.5rem 3rem 0 0;
+        width: 31rem;
+        height: 100%;
+        vertical-align: middle;
+        // min-height: 530px;
+        text-align: right;
+        // position: absolute;
+        // bottom: 0;
+        // right: 4rem;
+        // box-sizing: unset;
+        img {
+          display: inline-block;
+          margin: 0 30px 0 0;
+          width: 3rem;
+          vertical-align: middle;
+        }
+
+        h1 {
+          display: inline-block;
+          width: 100%;
+          vertical-align: middle;
+          font-size: 2.1rem;
+          color: $orange;
+          font-weight: bolder;
+          letter-spacing: 3px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .main {
+    width: 100%;
+    height: 100vh;
+
+    .login_wrapper {
+      display: inline-block;
+      height: 100vh;
+      vertical-align: middle;
+      position: relative;
+      right: 6rem;
+      z-index: 1;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 100%;
+        vertical-align: middle;
+      }
+
+      .loginform {
+        padding: 1.75rem 2.5rem;
+        width: 20.5rem;
+        max-width: 520px;
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 10px;
+        background: #ffffff;
+        position: relative;
+        top: 0;
+        font-size: 0.75rem;
+        font-weight: lighter;
+        box-shadow: 0 2px 5px rgba($color: $orange, $alpha: 0.3);
+
+        .title {
+          margin: 0 0 2.5rem 0;
+          letter-spacing: 3px;
+          text-align: left;
+          font-size: 0.9rem;
+          font-weight: bold;
+        }
+
+        .el-form-item {
+          margin: 0 0 35px 0;
+
+          &.rememberme {
+            text-align: left;
+
+            .el-checkbox__label {
+              color: $orange;
+              font-weight: bold;
+            }
+          }
+
+          &.verificationcode {
+            .el-form-item__content {
+              display: flex;
+
+              .el-input {
+                display: inline-block;
+                width: 50%;
+                vertical-align: middle;
+
+                .el-input__inner {
+                  padding-left: 1rem;
+                }
+              }
+
+              .codeimage {
+                display: inline-block;
+                padding: 0 0 0 2rem;
+                height: 2.1rem;
+                vertical-align: middle;
+
+                &:before {
+                  content: "";
+                  display: inline-block;
+                  height: 100%;
+                  vertical-align: middle;
+                }
+
+                img {
+                  display: inline-block;
+                  width: 100%;
+                  height: 80%;
+                  vertical-align: middle;
+                }
+
+                flex: 1;
+              }
+            }
+          }
+
+          .el-input {
+            height: 2.1rem;
+
+            input {
+              display: inline-block;
+              height: 100%;
+              font-size: 0.7rem;
+              vertical-align: middle;
+            }
+
+            .el-input__inner {
+              padding-left: 55px;
+              border-style: solid;
+              border-color: #e2e2e2;
+              border-radius: 30px;
+            }
+
+            .el-input__prefix {
+              &:before {
+                content: "";
+                display: inline-block;
+                width: 0;
+                height: 100%;
+                vertical-align: middle;
+              }
+
+              width: 55px;
+              text-align: center;
+              left: 0;
+
+              .icon {
+                display: inline-block;
+                // height: 39px;
+                width: 20px;
+                margin-left: 2px;
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+
+        .rememberme {
+          margin: 10px 0 40px 0;
+        }
+
+        .operation {
+          margin: 0;
+          width: 100%;
+
+          .el-button {
+            padding: 0.7rem 0;
+            width: 100%;
+            border-radius: 35px;
+            background-color: $orange;
+            span {
+              font-size: 0.8rem;
+              letter-spacing: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    width: 100%;
+    height: 11rem;
+    background-image: url("../image/access/login_footer_00000.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    .copyright {
+      color: #fff;
+      font-size: 14px;
+      position: absolute;
+      left: 40px;
+      bottom: 40px;
+    }
+  }
+}
+
+.access_404_container {
+  height: calc(100vh - 220px);
+
+  .main {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+
+    img {
+      display: inline-block;
+      margin: 0 120px 0 0;
+      width: 443px;
+      height: 340px;
+      vertical-align: middle;
+    }
+
+    .desc {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: left;
+
+      h1 {
+        font-size: 100px;
+        font-weight: bolder;
+        font-family: "alipuhuiti-regular";
+        // font-family: 'microsoft yahei';
+        color: #434e59;
+      }
+
+      p {
+        margin: 5px 0 18px 0;
+        color: #848586;
+        // opacity: 0.45;
+        font-size: 20px;
+      }
+    }
+  }
+}

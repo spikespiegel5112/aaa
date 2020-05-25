@@ -1,0 +1,32 @@
+.user_main_container {
+    display: flex;
+    font-size: 0;
+    // align-items: center;
+    .splitline {
+        display: inline-block;
+        margin: 0 20px;
+        width: 1px;
+        height: 100%;
+        vertical-align: middle;
+        background-color: #e6ebf5;
+    }
+    .common_table_container {
+        display: inline-block;
+        // width: 60%;
+        flex: 1;
+        vertical-align: top;
+    }
+    .common_tree_container {
+        display: inline-block;
+        width: 400px;
+        vertical-align: top;
+    }
+    .common_frame_container {
+        width: 100%;
+        .main {
+            margin: 70px 0 0 90px;
+            width: 50%;
+            min-width: 500px;
+        }
+    }
+}

@@ -1,0 +1,131 @@
+.van-button {
+    height: 2.1rem;
+    &.van-button--info {
+        background-color: $orange;
+        border-color: $orange;
+    }
+    &.van-button--normal {
+        padding: 0 0.75rem;
+        font-size: 0.7rem;
+    }
+}
+.van-cell {
+    font-size: 0.7rem;
+}
+.van-nav-bar {
+    .van-nav-bar__title {
+        font-size: 0.8rem;
+    }
+}
+
+.van-steps--horizontal {
+    .van-steps__items {
+        margin: 0 0 0.5rem;
+        padding-bottom: 1.1rem;
+    }
+}
+.van-steps {
+    overflow: visible;
+    &.van-steps--horizontal {
+        .van-step__title {
+            font-size: 0.6rem;
+        }
+        .van-step {
+            font-size: 0.7rem;
+        }
+    }
+    .van-step--horizontal {
+        &:first-child {
+            .van-step__title {
+                margin-left: -1.3rem;
+            }
+        }
+        &:last-child {
+            .van-step__title {
+                margin-right: -1.3rem;
+            }
+        }
+        .van-step__title {
+            margin-left: 0.15rem;
+        }
+        .van-step__circle-container {
+            padding: 0 0.4rem;
+            top: 1.5rem;
+            // right: -0.45rem;
+            // left: -0.4rem;
+        }
+    }
+    .van-step__icon {
+        font-size: 0.6rem;
+    }
+    .van-step__line {
+        top: 1.5rem;
+        height: 1px;
+    }
+
+    .van-step__circle {
+        width: 0.25rem;
+        height: 0.25rem;
+    }
+}
+
+.van-nav-bar {
+    height: 2.3rem;
+    line-height: 2.3rem;
+    .van-nav-bar__left,
+    .van-nav-bar__right {
+        padding: 0 0.8rem;
+        font-size: 0.7rem;
+    }
+}
+
+.van-cell {
+    padding: 0.5rem 0.8rem;
+    line-height: 1.2rem;
+}
+
+.van-field {
+    .van-field__label {
+        width: 2.8rem;
+        color: #656666;
+    }
+    .van-field__error-message {
+        font-size: 0.6rem;
+    }
+    .van-field__control--custom {
+        min-height: 1.2rem;
+    }
+}
+
+.van-radio {
+    &.van-radio--horizontal {
+        margin-right: 0.6rem;
+    }
+    .van-radio__label {
+        margin-left: 0.4rem;
+        line-height: 1.3rem;
+    }
+    .van-radio__icon--checked{
+        .van-icon{
+            background-color: #dd7034;
+            border-color: #dd7034;
+        }
+    }
+    .van-radio__icon--disabled{
+        .van-icon{
+            background-color: #ebedf0;
+            border-color: #c8c9cc;
+        }
+        opacity: 0.5;
+        // color: #fff;
+    }
+    .van-radio__icon {
+        font-size: 0.8rem;
+    }
+}
+
+.van-notify {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.7rem;
+    line-height: 1rem;
+}
